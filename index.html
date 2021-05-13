@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+
+    <!--Stylesheets and libraries-->
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+
+
+</head>
+<body>
+    
+<div class="container">
+    <div class="text">
+        <br>
+        <h3>Select your gradient colors</h3>
+    </div>
+    <div class="colors">
+        <input type="color" name="colorStart" id="StartColor" value="#ff00aa">
+        <input type="color" name="colorEnd" id="EndColor" value="#0f00ff">
+    </div>
+
+    <div class="buttons">
+        <button onclick="setDirection('to top',this);generateCode();"><i class="fas fa-arrow-up"></i></button>
+        <button onclick="setDirection('to bottom',this);generateCode();"><i class="fas fa-arrow-down"></i></button>
+        <button onclick="setDirection('to right',this);generateCode();"><i class="fas fa-arrow-right"></i></button>
+        <button onclick="setDirection('to left',this);generateCode();"><i class="fas fa-arrow-left"></i></button>
+        <button class="rotate-icon" onclick="setDirection('to top right',this);generateCode();"><i class="fas fa-arrow-up"></i></button>
+        <button class="rotate-icon" onclick="setDirection('to bottom left',this);generateCode();"><i class="fas fa-arrow-down"></i></button>
+        <button class="rotate-icon" onclick="setDirection('to bottom right',this);generateCode();"><i class="fas fa-arrow-right"></i></button>
+        <button class="rotate-icon" onclick="setDirection('to top left',this);generateCode();"><i class="fas fa-arrow-left"></i></button>
+    </div>
+    <div class="output">
+        <textarea name="txta" id="code" rows="5"></textarea>
+        <button id="copy" onclick="copyText()">copy</button>
+    </div>
+</div>
+
+    <!--scripts-->
+    <script src="js/master.js" ></script>
+</body>
+</html>
