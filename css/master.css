@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-    background-color:transparent;
+    background-color:#f1f1f1;
     border: 2px solid #fff;
     width:512px;
     padding: 50px 30px;
@@ -40,10 +40,8 @@ body{
     box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 
-.text h1{
-}
-
 .colors{
+    margin-top: 25px;
     width:100%;
     display:flex;
     justify-content: space-around;
@@ -59,7 +57,7 @@ input[type="color"]{
 
 input[type="color"]::-webkit-color-swatch{
     border-radius: 30px;
-    border: 2px solid #fff;
+    border:none;
 }
 
 .buttons{
@@ -74,8 +72,8 @@ input[type="color"]::-webkit-color-swatch{
     height:35px;
     width:35px;
     background-color:transparent;
-    border:2px solid #d5d5dc;
-    color:#d5d5dc;
+    border:2px solid #a0a0af;
+    color:#505050;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -96,13 +94,13 @@ input[type="color"]::-webkit-color-swatch{
     border-radius: 10px;
     color:#000;
     font-weight: 700;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 
 #code{
     width: 100%;
     resize: none;
-    color:#30304a;
+    color:#000;
     padding:10px 20px;
     background-color:transparent;
 }
